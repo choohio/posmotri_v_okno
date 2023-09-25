@@ -9,7 +9,8 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
+  padding: 133px 30px;
+  max-width: 1200px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -35,4 +36,74 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.content__details {
+  max-width: 400px;
+  max-height: 534px;
+  overflow: scroll;
+}
+
+.content__video-card {
+  display: flex;
+}
+
+.result {
+  width: 700px;
+}
+
+.result__video {
+  height: 400px;
+  width: 700px;
+}
+
+.result__video-container {
+  padding-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+
+}
+
+.title {
+  font-size: 75px;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__list .content__list-item:last-child {
+  padding-bottom: 0px;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
 }
