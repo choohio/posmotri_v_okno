@@ -233,16 +233,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__card-link:focus {
-<<<<<<< HEAD
-
   border: 1px solid white;
 }
 
 .title {
   font-size: 75px;
   line-height: 75px;
-=======
-
   border: 1px solid white;
 }
 
@@ -253,7 +249,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .title {
   font-size: 75px;
   line-height: 70.5px;
->>>>>>> 7e8eaf7bcd06deb96f7abec8f4dddbcd89fada24
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -277,10 +272,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   display: flex;
   flex-direction: column;
   gap: 30px;
-<<<<<<< HEAD
   overflow: auto;
   max-height: 530px; 
-=======
 }
 
 .content__list-item {
@@ -291,7 +284,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   padding-bottom: 0px;
   margin: 0 0;
   padding: 0 0;
->>>>>>> 7e8eaf7bcd06deb96f7abec8f4dddbcd89fada24
 }
 
 .content__video-card {
