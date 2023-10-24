@@ -18,7 +18,7 @@ html {
   color: #fff;
   font-size: 18px;
   background-color: #1b1919;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
 }
 
 h1,
@@ -64,8 +64,8 @@ a {
   border: 1px currentColor solid; 
   outline: none;
   font-weight: 700;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   cursor: pointer;
 }
 
@@ -90,22 +90,24 @@ a {
 /* Result */
 
 .result {
-  width: 711px;
-  font-size: 18px;
-}
-
-.result__video-container {
-  font-family: 'Fira Sans Condensed';
-}
-
-.result__video {
-  height: 386px;
-  width: 711px;
-  object-fit: cover;
+  
 }
 
 .result__video-container {
   position: relative;
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+
+  
+  font-family: 'Fira Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
@@ -122,20 +124,26 @@ a {
   justify-content: space-between;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Fira Sans Condensed';
-  padding-top: 10px;
+  font-family: 'Fira Sans Condensed', 'Arial', 'Helvetica', sans-serif;
 }
 
 .search-form__textfield {
   width: 225px;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 400;
+}
+
+input::placeholder {
+  font-family: 'Fira Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
 }
 
 .search-form__fieldset-title {
   line-height: 22px;
   font-size: 18px;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
 }
 
@@ -144,6 +152,8 @@ a {
   flex-direction: column;
   gap: 5px;
   justify-content: space-between;
+  min-height: 49px;
+  padding-bottom: 5px;
   border: 0;
 }
 
@@ -201,8 +211,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   height: 19px;
   background-color: currentColor;
   box-shadow: inset 0 0 0 1px #1b1919;
-  
-  
 }
 
 .search-form__submit-button {
@@ -220,7 +228,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   gap: 26px;
   max-width: 400px;
   max-height: 530px;
-  
 }
 
 .content__video-card {
@@ -238,16 +245,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .title {
   font-size: 75px;
-  line-height: 75px;
-  border: 1px solid white;
-}
-
-.content__video-card-thumbnail {
-  width: 194px;
-}
-
-.title {
-  font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
   font-weight: 700;
@@ -260,7 +257,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__card-link {
   display: block;
   text-decoration: none;
-  margin: 2px;
 }
 
 .content__card-link_current {
@@ -268,23 +264,19 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__list {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  overflow: auto;
-  max-height: 530px; 
-}
-
-.content__list-item {
+  overflow: scroll;
   
 }
 
-.content__list .content__list-item:last-child {
-  padding-bottom: 0px;
-  margin: 0 0;
-  padding: 0 0;
+.content__list-item {
+  display: flex;
+  justify-content: space-between;
 }
+
+/* Шаблон пункта списка с карточкой видео */
 
 .content__video-card {
   border:#1b1919;
@@ -293,7 +285,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .content__video-card-title {
   padding-top: 5px;
-  font-family: 'Oswald';
+  font-family: 'Oswald', 'Arial', 'Helvetica', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 700;
@@ -309,13 +301,15 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__video-card-description {
   font-size: 18px;
   line-height: 0.9;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
 }
 
 .content__video-card-thumbnail {
+  margin: 2px;
   object-fit: contain;
   width: 194px;
+  height: 103px;
 }
 
 .visually-hidden {
@@ -326,5 +320,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
