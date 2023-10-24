@@ -306,8 +306,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 }
 
 .content__video-card-thumbnail {
-  margin: 2px;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   width: 194px;
   height: 103px;
 }
